@@ -20,8 +20,9 @@ same things, but the tools underneath are different.
 ## Running the script
 
 Needs `bash`, `bc`, `awk`, `ffmpeg`/`ffprobe`, and a build of gifsicle with the
-lossy patch. The paths to all three are hard-coded near the top of
-`gif_smasher.sh` and will need changing for your machine.
+lossy patch. All three are found on `$PATH`; set `$FFMPEG`, `$FFPROBE` or
+`$GIFSICLE` to point at a particular build instead — which you will want for
+gifsicle, since the lossy patch is not in most packaged versions.
 
 ```sh
 ./gif_smasher.sh -i clip.mov -t 2
